@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Fredoka+One&display=swap');
+body, html {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+
+body {
+    background-color:#f9f9f9;
+    font-family: 'Spartan';
+}
+
+.masthead {
+   
+    display:flex;
+    flex-direction:row;
+    padding-top:5rem;
+    padding-right:5rem;
+    padding-left:3rem;
+    background-position: fixed;
+    padding-bottom:5rem;
+    font-family: 'Bowlby One SC', ;
+
+    
+
+    .item {
+       
+        width:50%;
+        height:94%;
+        position:relative;
+        text-align: center;
+        transition: 500ms ease;
+
+       
+    }
+
+    .item1 {
+        margin-left:2%;
+        margin-top:2%;
+        position:relative;
+        text-align: center;
+        color:white;
+        transition: 500ms ease;
+        
+    }
+
+    .imgHeader {
+        width:100%;
+    }
+    
+
+}
+
+.navbar {
+    border-bottom:1px solid black;
+    position:fixed;
+    width:100%;
+    z-index:1;
+    padding:10px;
+ 
+}
+
+.imgLogo {
+    height:80px !important;
+    width:400px;
+}
+
+
+    .vl {
+        border-left: 2px solid rgba(183, 35, 75, 1);
+    
+       
+      }
+
+      .nav-item {
+          .fab {
+              font-size:35px;
+              color:rgba(183, 35, 75, 1);
+          }
+      }
+
+      .item:hover {
+          filter:blur(1px);
+          transition: 500ms ease;
+
+         
+       
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bolder;
+      }
+
+      .alertDiv {
+          text-align: center;
+          height:500px;
+        color:white;
+          display:flex;
+          flex-direction:column;
+          justify-content: center;
+          position:relative;
+          opacity:0.8;
+          font-family: 'Bowlby One SC', ;
+
+          .fab {
+              color: #009cde;
+              font-size:100px;
+          }
+      
+    
+          
+      }
+
+  
+    .popust {
+        font-size:80px;
+        opacity:0.8;
+        color:rgba(183, 35, 75, 1);
+        font-family: 'Bowlby One SC', ;
+   
+    }
+      
+    .proizvodi {
+        display:flex;
+        flex-direction:column;
+        
+       position:relative;
+    
+    }
+
+    .navbar-brand {
+        font-family: 'Bowlby One SC', ;
+        font-size:25px;
+    }
+
+    .proizvodr {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .proizvod1 {
+        padding-top:4rem;
+        padding-left:2rem;
+        padding-right:2rem;
+        position:relative;
+        
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bolder;
+            color:white;
+            font-family: 'Bowlby One SC', ;
+          }
+    
+     
+        }
+
+        .footer-section {
+            display:flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            padding:3rem;
+            position: sticky;
+            top:0;
+      background-color: black;
+      color:white;
+      opacity:0.8;
+ }
+
+            .itemF {
+                width:33.3%;
+            }
+
+            .vl {
+                opacity:0.5;
+            }
+
+            .t {
+                .fab {
+                    font-size:50px;
+                    margin:10px;
+                }
+            }
+        
+
+.navlog {
+    color:rgba(183, 35, 75, 1) !important;
+}
+
+.nav-link {
+    font-size:25px;
+    
+
+    a {
+        font-size:25px;
+    }
+    .fas {
+        font-size:25px;
+        color:rgba(183, 35, 75, 1);
+        opacity:0.5;
+    }
+}
+
+.footerM {
+    display:flex;
+    justify-content: center;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    color:white;
+    background-color: black;
+    opacity:0.8;
+    .far {
+        color:rgba(183, 35, 75, 1);
+    }
+}
