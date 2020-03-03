@@ -286,9 +286,19 @@ body {
     }
     .footerItem {
 
-    
+        font-size:12px;
+
         h4 {
             font-family: 'Bowlby One SC', ;
+        }
+
+        #myBtn {
+            font-size:12px;
+            height:40px;
+            padding-top:2;
+            padding-bottom:0;
+            padding-left:5;
+            padding-right:5;
         }
 
         p {
@@ -348,4 +358,13 @@ hr {
 
 
 
+#more {display: none;}
 
+#myBtn {
+    padding:5px;
+    margin:auto;
+    background-color:rgba(183, 35, 75, 1);
+    color:white;
+    border:none;
+    height:auto;
+}

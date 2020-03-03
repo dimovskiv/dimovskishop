@@ -7,7 +7,7 @@ $(window).on("scroll", function() {
       
     } else {
        $(".navbar").removeClass("changecolor");
-       $('.navbar-brand img').attr("src","clothing.png");
+       $('.navbar-brand img').attr("src","clothing1.png");
        
     }
 })
