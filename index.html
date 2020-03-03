@@ -5,158 +5,188 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Basma</title>
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/paroller.js/dist/jquery.paroller.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="main1.js"></script>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-md ">
 
-        
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-       
-          <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-        
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">MEN<span class="sr-only">(current)</span></a>
-              </li>
-              <div class="vl"></div>
-              <li class="nav-item">
-                <a class="nav-link" href="#">WOMEN</a>
-              </li>
-            </ul>
-            
-            
-       
-            <a class="navbar-brand d-none d-lg-block" href="#">DIMOVSKI CLOTHING STORE</a>
-            
-            
-            
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link navlog">Log in</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Sign up</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"><i class="fas fa-shopping-cart"></i></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <div class="navbar-collapse collapse order-2  dual-collapse2 collapse2">
+        <ul class="navbar-nav mr-auto text-center  p-3">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="#">WOMEN</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="centerMain">
+    
+
+    <div class="centerNav1 ml-3">
+      <a href="#" class="mb-1">Log in</a>
+      <a href="#" class="mt-1" style="color:rgba(183, 35, 75, 1);" >Sign up</a>
+
+    </div>
+
+    <div class="centerNav">
+      <a class="navbar-brand mt-1" href="#"><img src="clothing.png" class="img-fluid"></a>
+    </div>
+
+    <div class="centerNav mr-1 mt-1">
+      <button id="changeToggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2" onclick=functionPromeni()>
+       <i class="fas fa-chevron-down"></i>
+      
+      </button>
+    </div>
+  </div>
+    
+    <div class="navbar-collapse collapse order-1 dual-collapse2 collapse1">
+        <ul class="navbar-nav ml-auto text-center p-3">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">MEN</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse order-3 dual-collapse2 collapse3">
+      <ul class="navbar-nav ml-auto text-left text-center p-3">
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">KIDS</a>
+          </li>
+      </ul>
+  </div>
+
+  <div class="navbar-collapse collapse order-4 dual-collapse2 collapseAll">
+    <ul class="navbar-nav ml-auto text-left text-center p-3">
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">ALL CATEGORIES</a>
+        </li>
+    </ul>
+
+    
+</div>
+
+
+  <div class="navbar-collapse collapse order-5 dual-collapse2 collapse4">
+    <ul class="navbar-nav ml-auto text-left text-center p-3">
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">ABOUT US</a>
+        </li>
+    </ul>
+</div>
+
+<div class="navbar-collapse collapse order-6 dual-collapse2 collapseCon">
+  <ul class="navbar-nav ml-auto text-left text-center p-3">
+      <li class="nav-item">
+          <a class="nav-link text-white" href="#">CONTACT US</a>
+      </li>
+  </ul>
+</div>
+</nav>
+
+
+
 
         <div class="masthead">
           <div class="item ">
             <div class="centered animated flash infinite slower"><h1 class="display-4  ">SHOP MEN</h1></div>
             <img src="1.jpg" class="img-fluid imgHeader">
           </div>
-          <div class="item item1">
+          <div class="item item1 mt-1 ">
             <div class="centered animated flash infinite slower"><h1 class="display-4">SHOP WOMEN</h1></div>
             <img src="2.jpg" class="img-fluid imgHeader">
           </div>
         </div>
 
-        <div class="alertDiv parallax-window" data-parallax="scroll" data-image-src="bg3.jpg" position="center">
-          <div class="itemPopust">
-            <h1 class="display-2">SIGN UP!</h1>
-            <h3 class="mt-4">And receive</h3>
-          </div>
-          <div class="itemPopust1 mt-5">
-           <p><span class="popust animated flash infinite slow">10%</span></p>
-           <h3 class="mt-5">Discount on your first order!</h3>
-          </div>
+        <div class="parallax">
+          <div class="centered">GET <span class="deset animated flash infinite slower">10% </span> <br/> on your first order with signing in!</div>
         </div>
 
-        <div class="proizvodi">
-          <div class="proizvodr">
-          <div class="proizvod1">
-            <div class="centered"><h1 class="display-3">SKIRTS</h1></div>
-            <img src="skirts.jpg" class="img-fluid">
+        <div class="containerMain">
+          <div class="itemMain">
+            <div class="centered">TOPS</div>
+            <img src="tops.jpg" class="img-fluid">
           </div>
+          <div class="itemMain">
+            <div class="centered">TSHIRTS</div>
+            <img src="tshirts.jpg" class="img-fluid mt-1">
+          </div>  
+          <div class="itemMain">
+            <div class="centered">ACCESSORIES</div>
+            <img src="ac.jpg" class="img-fluid mt-1">
+          </div>
+          <div class="itemMain">
+            <div class="centered">SWEATSHIRTS</div>
+            <img src="sweatshirts.jpg" class="img-fluid mt-1">
+          </div>
+          <div class="itemMain">
+            <div class="centered">BOOTS</div>
+            <img src="boots.jpg" class="img-fluid mt-1">
+          </div>
+          <div class="itemMain">
+            <div class="centered">BAGS</div>
+            <img src="bags.jpg" class="img-fluid mt-1">
+          </div>
+          <div class="itemMain">
+            <div class="centered">JEANS</div>
+            <img src="jeans.jpg" class="img-fluid mt-1">
+          </div>
+          <div class="itemMain">
+            <div class="centered">SKIRTS</div>
+            <img src="skirts.jpg" class="img-fluid mt-1">
+          </div>
+        </div>
           
-          <div class="proizvod1">
-            <div class="centered"><h1 class="display-3">TSHIRTS</h1></div>
-            <img src="tshirts.jpg" class="img-fluid mt-5 mb-5">
-          </div>
+        <div class="parallax1">
+          <div class="centered">Shop safe and fast with <br/> paypal <br/>   <i class="fab fa-paypal mt-4 animated pulse infinite fast"></i> </div>
+       
         </div>
-
-        <div class="proizvodr">
-
-          <div class="proizvod1">
-            <div class="centered"><h1 class="display-3">ACCESSORIES</h1></div>
-            <img src="ac.jpg" class="img-fluid mt-5 mb-5">
+    
+        <div class="footer">
+          <div class="footerItem">
+            <h4>BASMA</h4>
+              <hr>
+              <p>We provide shipping within Macedonia, as well as worldwide in just few days. If our product does not suits you, you can exchange it for another, or you can return it and receive your money back.</p>
           </div>
+          <div class="footerItem mb-4">
+            <h4>FAQ</h4>
+              <hr>
+            <div class="links">
+              <a href="#">Can i return an item?</a>
+              <a  href="#">When will i receive my item?</a>
+              <a  href="#">How can i measure my size?</a>
+            </div>
 
-          <div class="proizvod1">
-            <div class="centered"><h1 class="display-3">SWEATSHIRTS</h1></div>
-            <img src="sweatshirts.jpg" class="img-fluid">
           </div>
-        </div>
-
-        </div>
-
-        <div class="alertDiv parallax-window" data-parallax="scroll" data-image-src="bg4.jpg" >
-          <div class="itemPopust">
-            <h1>Fast checkout with paypal</h1>
-            <i class="fab fa-paypal mt-3"></i>
-          </div>
-
-        </div>
-
-
-
-        <div class="footer-section">
-          
-          <div class="itemF">
-            <h3> Dimovski clothing shop</h3>
-            
-            <p class="mt-5">The World's Largest Fashion Store. Find More of the Fashion You Love. Search thousands of fashion stores in one place. Over 12,000 Designers. Latest Trends. Find The Best Sales. International Shipping. 5Million Fashion Products.</p>
-          </div>
-          <div class="vl ml-5"></div>
-        
-          <div class="itemF">
-            <h3> COMPANY</h3>
-            
-            <div class="t mt-5">
-            <a class="mr-2">ABOUT US</a> 
-            <a class="ml-2">CONTACT US</a>
-          </div>
-          </div>
-          <div class="vl"></div>
-          <div class="itemF">
-            <h3> MEET US ON</h3>
-            
-            <div class="t mt-5">
-
-            <i class="fab fa-instagram" style="color:#C13584;"></i>
-            <i class="fab fa-facebook" style="color:#3B5998"></i>
-            <i class="fab fa-whatsapp" style="color:#25d366"></i>
+          <div class="footerItem">
+            <h4>SOCIAL NETWORKS</h4>
+            <hr>
+            <div class="social">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-viber"></i>
             </div>
           </div>
-          
         </div>
-        
-        
-        
-    
-          
-        </div>
-
+      
         <div class="footerM">
           <div class="itemM">
             <h2>MADE WITH <i class="far fa-heart animated heartBeat infinite ml-2 mr-3"></i>IN SERBIA</h2>
           </div>
         </div>
 
-<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="./parralax/parallax.js"></script>
+
+<script src="main1.js"></script>
 </body>
 </html>

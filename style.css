@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lacquer&display=swap");
 body, html {
   height: 100%;
   margin: 0;
@@ -12,225 +13,346 @@ body {
   font-family: 'Spartan';
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  height: 90px;
+  padding: 0;
+  -webkit-transition: 2s ease ease-in-out;
+  transition: 2s ease ease-in-out;
+}
+
+.navbar a {
+  color: black;
+}
+
+.navbar .navbar-brand .img-fluid {
+  height: 70px;
+  width: 70px;
+  margin-top: 5px;
+}
+
+.navbar-toggler .fas {
+  color: #b7234b;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.navbar-collapse {
+  background-color: white;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  opacity: none !important;
+}
+
+.collapse1 {
+  background-color: #a0c9f2;
+  font-family: 'Bowlby One Sc';
+  font-size: 25px;
+}
+
+.collapse2 {
+  background-color: #f3b8d3;
+  font-family: 'Bowlby One Sc';
+  font-size: 25px;
+}
+
+.collapse3 {
+  background-color: #d0f4b2;
+  font-family: 'Bowlby One Sc';
+  font-size: 25px;
+}
+
+.collapse4 {
+  background-color: black;
+  opacity: 0.8;
+  font-family: 'Bowlby One Sc';
+  font-size: 25px;
+}
+
+.collapseAll {
+  opacity: 0.8;
+  background-color: black;
+  font-family: 'Bowlby One Sc';
+  font-size: 25px;
+}
+
+.collapseCon {
+  opacity: 0.8;
+  background-color: black;
+  color: white;
+  font-family: 'Bowlby One Sc';
+  font-size: 25px;
+}
+
+.centerMain {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.centerMain .centerNav1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+}
+
+.centerMain .centerNav1 a {
+  font-size: 14px;
+}
+
 .masthead {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-top: 5rem;
-  padding-right: 5rem;
-  padding-left: 3rem;
-  background-position: fixed;
-  padding-bottom: 5rem;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   font-family: "Bowlby One SC";
+  color: white;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 6rem;
 }
 
 .masthead .item {
-  width: 50%;
-  height: 94%;
-  position: relative;
-  text-align: center;
-  -webkit-transition: 500ms ease;
-  transition: 500ms ease;
-}
-
-.masthead .item1 {
-  margin-left: 2%;
-  margin-top: 2%;
-  position: relative;
-  text-align: center;
-  color: white;
-  -webkit-transition: 500ms ease;
-  transition: 500ms ease;
-}
-
-.masthead .imgHeader {
   width: 100%;
+  position: relative;
 }
 
-.navbar {
-  border-bottom: 1px solid black;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  padding: 10px;
-}
-
-.imgLogo {
-  height: 80px !important;
-  width: 400px;
-}
-
-.vl {
-  border-left: 2px solid #b7234b;
-}
-
-.nav-item .fab {
-  font-size: 35px;
-  color: #b7234b;
-}
-
-.item:hover {
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
-  -webkit-transition: 500ms ease;
-  transition: 500ms ease;
-}
-
-.centered {
+.masthead .item .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-weight: bolder;
 }
 
-.alertDiv {
-  text-align: center;
+.parallax {
+  background-image: url("bg4.jpg");
+  /* Set a specific height */
   height: 500px;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  opacity: 0.8;
-  font-family: "Bowlby One SC";
+  text-align: center;
 }
 
-.alertDiv .fab {
-  color: #009cde;
-  font-size: 100px;
-}
-
-.popust {
-  font-size: 80px;
-  opacity: 0.8;
-  color: #b7234b;
-  font-family: "Bowlby One SC";
-}
-
-.proizvodi {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-}
-
-.navbar-brand {
-  font-family: "Bowlby One SC";
-  font-size: 25px;
-}
-
-.proizvodr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.proizvod1 {
-  padding-top: 4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  position: relative;
-}
-
-.proizvod1 .centered {
+.parallax .centered {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 60%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-weight: bolder;
   color: white;
-  font-family: "Bowlby One SC";
+  text-align: right;
+  font-size: 20px;
+  line-height: 2.5;
 }
 
-.footer-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 3rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: black;
-  color: white;
-  opacity: 0.8;
-}
-
-.itemF {
-  width: 33.3%;
-}
-
-.vl {
-  opacity: 0.5;
-}
-
-.t .fab {
-  font-size: 50px;
-  margin: 10px;
-}
-
-.navlog {
-  color: #b7234b !important;
-}
-
-.nav-link {
-  font-size: 25px;
-}
-
-.nav-link a {
-  font-size: 25px;
-}
-
-.nav-link .fas {
-  font-size: 25px;
+.parallax .centered .deset {
   color: #b7234b;
-  opacity: 0.5;
+  font-size: 30px;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.parallax1 {
+  background-image: url("bg3.jpg");
+  /* Set a specific height */
+  height: 500px;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+}
+
+.parallax1 .centered {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  line-height: 2.5;
+}
+
+.parallax1 .centered .fab {
+  font-size: 70px;
+  color: rgba(59, 123, 191, 0.8);
 }
 
 .footerM {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: white;
-  background-color: black;
+  text-align: center;
+  padding: 5px;
+  background-color: whitesmoke;
+  color: black;
   opacity: 0.8;
 }
 
-.footerM .far {
+.footerM .itemM h2 {
+  font-size: 17px;
+}
+
+.footerM .itemM .far {
   color: #b7234b;
+  font-size: 25px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.footer .soscial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .fab {
+  font-size: 40px !important;
+  margin: 10px;
+}
+
+.footer .fa-instagram {
+  color: rgba(193, 53, 132, 0.8);
+}
+
+.footer .fa-facebook-square {
+  color: rgba(59, 89, 152, 0.8);
+}
+
+.footer .fa-whatsapp {
+  color: rgba(37, 211, 102, 0.8);
+}
+
+.footer .fa-viber {
+  color: rgba(89, 38, 124, 0.8);
+}
+
+.footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 2.5;
+}
+
+.footer .links a {
+  color: black;
+}
+
+.footer .footerItem h4 {
+  font-family: "Bowlby One SC";
+}
+
+.footer .footerItem p {
+  line-height: 2.5;
+}
+
+.containerMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.containerMain .itemMain {
+  position: relative;
+}
+
+.containerMain .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: bolder;
+  color: white;
+  font-family: "Bowlby One SC";
+  font-size: 40px;
+}
+
+hr {
+  background-color: #b7234b;
+}
+
+.sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#logoNav {
+  height: 80px;
+  width: 80px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: inline-block !important;
 }
 /*# sourceMappingURL=style.css.map */
